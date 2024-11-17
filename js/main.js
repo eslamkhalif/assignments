@@ -1,26 +1,26 @@
 
 
-// array off quote 
+
 
  quotes = [
 
     {
         quote: "Be yourself; everyone else is already taken.",
-        author: "Oscar Wilde"
+        owner: "Oscar Wilde"
     },
 
     {
         quote: "Two things are infinite: the universe and human stupidity and I'm not sure about the universe.",
-        author: "Albert Einstein"
+        owner: "Albert Einstein"
     },
 
     {
         quote: "Be the change that you wish to see in the world.",
-        author: "Mahatma Gandhi"   
+        owner: "Mahatma Gandhi"   
     },
     {
         quote: "If you tell the truth, you don't have to remember anything.",
-        author: "Mark Twain"
+        owner: "Mark Twain"
     },
 
 
@@ -28,10 +28,10 @@
 
 function generateQuote() {
     
-     randomIndex = Math.floor(Math.random() * quotes.length);
-     randomQuote = quotes[randomIndex];
+     x = Math.trunc(Math.random() * quotes.length);
+     e = quotes[x];
 
      
-    document.getElementById("quote").textContent = `${randomQuote.quote}`;
-    document.getElementById("author").textContent = ` ${randomQuote.author}`;
-}
+    document.getElementById("quote").textContent = `${e.quote}`;
+    document.getElementById("owner").textContent = ` ${e.owner}`;
+}   
